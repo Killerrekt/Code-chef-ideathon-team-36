@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT healthcare(emergency)</title>
+    <style>
+        .navbar {
+            font-size: larger;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style-type: none;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: white;
+            background-color: #2596be;
+        }
+        a {
+            text-decoration: none;
+        }
+        a.nav:active{
+            color: white;
+        }
+        a.nav:hover{
+            color: white;
+        }
+        a.nav:visited{
+            color:white;
+        }
+        .d1{
+            padding-top: 1%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class = navbar>
+        <li><a href = "front.html" class = "nav">Home</a></li>
+        <li><a href = "appointment.html" class = "nav">Appointments</a></li>
+        <li><a href = "emergency.html" class = "nav">Emergency</a></li>
+        <li><a href= "direction.html" class ="nav">Locations</a></li>
+        <li><a href = "common.html" class="nav">Common medication</a></li>
+        <li><a href = "about.html" class = "nav">Contact</a></li>
+        </ul>
+    </div>
+    <div class="d1">
+        <h1>EMERGENCY</h1>
+        In case of emergency like heart attack, stroke etc.., Remain calm as help will be on it the way by simply pressing the
+        button below. No need to vary about informing warden, your parents etc.., as those will be handle by the website.
+        <br><br>
+        <form class = "form">
+            <label for="registerno">Registration number</label>
+            <input type="text" name="regno" id="reg">
+            <br><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>  
+    <script src="emergency.js"></script>
+</body>
+</html>

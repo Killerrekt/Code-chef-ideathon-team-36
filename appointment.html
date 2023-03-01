@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT healthcare(Appointments)</title>
+    <style>
+        .navbar {
+            font-size: larger;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style-type: none;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: white;
+            background-color: #2596be;
+        }
+        a {
+            text-decoration: none;
+        }
+        a.nav:active{
+            color: white;
+        }
+        a.nav:hover{
+            color: white;
+        }
+        a.nav:visited{
+            color:white;
+        }
+        .d1{
+            padding-top: 1%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        label {
+        display: inline-block;
+        width: 175px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class = navbar>
+        <li><a href = "front.html" class = "nav">Home</a></li>
+        <li><a href = "appointment.html" class = "nav">Appointments</a></li>
+        <li><a href = "emergency.html" class = "nav">Emergency</a></li>
+        <li><a href= "direction.html" class ="nav">Locations</a></li>
+        <li><a href = "common.html" class="nav">Common medication</a></li>
+        <li><a href = "about.html" class = "nav">Contact</a></li>
+        </ul>
+    </div>
+    <div class="d1">
+        <h1>
+            Online appointment booking
+        </h1>
+        <p>
+            This is an online doctor appointment booking service for VIT student.
+        </p>
+        <br>
+        <div class="d2">
+            <form action ="" class = 'form'>
+                <label for="FirstName">First Name :- </label>
+                <input type="text" id = "FirstName" name = "first">
+                <br><br>
+                <label for="LastName">Last Name :- </label>
+                <input type="text" id = "LastName" name = "last">
+                <br><br>
+                <label for="registerno">Registration number :- </label>
+                <input type="text" id = "registerno" name = "regno">
+                <br><br>
+                <label for="Service">Service :-</label>
+                <select name="drname" id="Service">
+                    <option value="Dentistry">Dentistry</option>
+                    <option value="Otolaryngology">ENT specialist</option>
+                    <option value="Ophthalmology">Eye specialist</option>
+                    <option value="Dermatology">Skin specialist</option>
+                    <option value="Pediatrics">Child specialist</option>
+                    <option value="Orthopedics">Bone specialist</option>
+                    <option value="Psychiatry">Psychiatry</option>
+                </select>
+                <br><br>
+                <label for="datte">Date & Time :- </label>
+                <input type="datetime-local" id = "dattim" name = "datteme">
+                <br><br>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <script src = "appointment.js"></script>
+</body>
+</html>
