@@ -8,6 +8,9 @@ function getdata(e){
     if (formdata.get('regno')=='') {
         alert('Please enter your registration number')      
     }
+    else if (formdata.get('regno').length != 9){
+        alert("The registration number that has been enter is not in the right format");
+    }
     else {
         location.replace('/front.html')
         alert('Your response has been noted and help is on its way')
